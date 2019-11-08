@@ -1,0 +1,8 @@
+import express from 'express';
+import HomeController from './app/controllers/HomeController';
+
+const routes = express.Router();
+
+routes.get('/',HomeController.index);
+
+export default routes;
