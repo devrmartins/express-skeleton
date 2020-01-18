@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
+    "docker": "docker run -dit --name express-database -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=express -p 3306:3306 --restart always mysql:5.7",
     "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "dependencies": {
