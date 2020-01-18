@@ -1,13 +1,19 @@
-version: '3'
+version: '3.4'
 
 services:
   database:
-    image: mysql:5.7
+    image: mysql:${DOCKER_MYSQL_VERSION}
+    container_name: ${DOCKER_CONTAINER_NAME}
     volumes:
-      - myapp:/var/lib/mysql
+      - app-volume:/var/lib/mysql
     ports:
-      - 3306:3306
+      - ${DB_PORT}:3306
     environment:
-      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: ${DB_PASS}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+      MYSQl_DATABASE: ${DB_DATABASE}
 volumes:
-  myapp:
+  app-volume: 
+    name: ${DOCKER_VOLUME_NAME}
+    external: false
