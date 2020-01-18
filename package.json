@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "database": "docker-compose up -d"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
