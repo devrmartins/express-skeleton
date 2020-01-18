@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "database": "docker-compose up -d"
+    "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
