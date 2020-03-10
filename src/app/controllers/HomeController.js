@@ -1,6 +1,10 @@
 class HomeController {
     index (req,res) {
-        return res.json({ message: "Parabéns! Esqueleto de uma aplicação com Express + Sequelize instalado com sucesso" })
+        return res.json({ 
+            name: "Mercado Livre Micro Serviço",
+            version: '1.0',
+            author: 'Raffael Martins <raffael.martins@vendaecia.com>' 
+        })
     }
 }
 
