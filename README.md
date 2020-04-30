@@ -1,11 +1,11 @@
 # ESQUELETO PROJETO EXPRESS + SEQUELIZE
 ## Instalação
 ### Git Clone
-git clone git@github.com:devrmartins/express-skeleton.git
+Clone o projeto
 ### Yarn
 yarn install
 ### ENV
-No projeto existe um arquivo chamado .env-example, renomei ele para .env e informe os dados requisitados.
+No projeto existe um arquivo chamado .env-example, renomei ele para .env e informe as configurações requisitadas.
 ### RUN BABY RUN!
 Pronto! agora basta rodar o comando yarn dev no terminal e abrir o navegador no endereço http://localhost:3333
 
